@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: 21go-protecao-patrimonial-rj
+    runtime: static
+    buildCommand: echo "Site pronto"
+    staticPublishPath: .
