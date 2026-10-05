@@ -27,15 +27,20 @@
     <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
     <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></symbol>
   </svg>
+  <svg class="logo-filter-defs" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><defs>
+    <filter id="logo-remove-blue" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  4.5 0 0 0 -1.4"/></filter>
+    <clipPath id="logo-icon-crop"><rect x="10" y="105" width="224" height="255"/></clipPath>
+    <clipPath id="logo-word-crop"><rect x="230" y="180" width="280" height="105"/></clipPath>
+  </defs></svg>
 
   <header class="site-header">
     <div class="container header-inner">
-      <a href="#inicio" class="brand" aria-label="21Go! Proteção patrimonial — início"><span class="brand-name">21Go<span>!</span></span><span class="brand-caption">PROTEÇÃO PATRIMONIAL</span></a>
-      <nav class="desktop-nav" aria-label="Navegação principal"><a href="#protecao">Proteção</a><a href="#beneficios">Benefícios</a><a href="#sobre">A 21Go!</a><a href="#duvidas">Dúvidas</a></nav>
+      <a href="#inicio" class="brand" aria-label="21Go! Proteção patrimonial — início"><svg class="brand-logo" viewBox="0 105 512 255" role="img" aria-label="Logo oficial 21Go!"><image href="assets/logo-original.jpeg" width="512" height="512" filter="url(#logo-remove-blue)" clip-path="url(#logo-icon-crop)"/><image href="assets/logo-original.jpeg" width="512" height="512" filter="url(#logo-remove-blue)" clip-path="url(#logo-word-crop)"/></svg><span class="brand-caption">PROTEÇÃO PATRIMONIAL</span></a>
+      <nav class="desktop-nav" aria-label="Navegação principal"><a href="#sobre">A 21Go!</a><a href="#protecao">Proteção</a><a href="#beneficios">Benefícios</a><a href="#duvidas">Dúvidas</a></nav>
       <a class="button button-small button-outline header-contact" aria-label="Falar no WhatsApp" data-whatsapp href="https://wa.me/5521974950212?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%2021Go%21%20e%20quero%20conhecer%20a%20prote%C3%A7%C3%A3o%20patrimonial." target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-whatsapp"/></svg><span>Falar no WhatsApp</span></a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Abrir menu"><span></span><span></span></button>
     </div>
-    <nav id="mobile-nav" class="mobile-nav" aria-label="Navegação móvel" hidden><a href="#protecao">Proteção</a><a href="#beneficios">Benefícios</a><a href="#sobre">A 21Go!</a><a href="#duvidas">Dúvidas</a><a href="#contato">Contato</a></nav>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Navegação móvel" hidden><a href="#sobre">A 21Go!</a><a href="#protecao">Proteção</a><a href="#beneficios">Benefícios</a><a href="#duvidas">Dúvidas</a><a href="#contato">Contato</a></nav>
   </header>
 
   <main id="conteudo">
@@ -54,6 +59,11 @@
     </section>
 
     <div class="region-band"><div class="container region-inner"><span><svg class="icon"><use href="#i-pin"/></svg>DE QUEM É DA REGIÃO.</span><p>Grande Rio <i></i> Baixada <i></i> Interior do estado</p><span class="region-ending">Perto de você. Em cada caminho.</span></div></div>
+
+    <section class="section container about-section" id="sobre" aria-labelledby="about-title">
+      <div class="portrait-wrap"><img src="assets/marcos-alves.jpg" alt="Marcos Alves, presidente da 21Go!" width="3072" height="4096" loading="lazy"><div class="portrait-caption"><span>QUEM ESTÁ À FRENTE</span><strong>Marcos Alves</strong><p>Presidente da 21Go!</p></div><span class="portrait-accent" aria-hidden="true"></span></div>
+      <div class="about-copy"><p class="eyebrow">CONHEÇA A 21GO!</p><h2 id="about-title">Por trás da proteção,<br><span>existe gente.</span></h2><p>A 21Go! apresenta uma proposta de proteção patrimonial com atenção a quem vive e se movimenta pelo Rio de Janeiro: Grande Rio, Baixada e interior do estado.</p><p>À frente da empresa está <strong>Marcos Alves</strong>, que compartilha em seu perfil uma visão de fé, família e propósito.</p><blockquote>“Deus é o centro.<br>Família é a base.<br>O resultado é consequência.”<cite>Marcos Alves · apresentação no Instagram</cite></blockquote><a class="social-link" href="https://www.instagram.com/marcosalves_pr/" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-instagram"/></svg>Conheça o presidente <span>@marcosalves_pr</span></a></div>
+    </section>
 
     <section class="section container" id="protecao" aria-labelledby="protection-title">
       <div class="section-heading"><div><p class="eyebrow">PARA A SUA ROTINA</p><h2 id="protection-title">Cada caminho tem uma história.<br><span>A sua merece proteção.</span></h2></div><p>Para trabalhar, passear ou estar com quem importa. Encontre a proteção patrimonial adequada ao seu veículo.</p></div>
@@ -78,11 +88,6 @@
       </div>
     </section>
 
-    <section class="section container about-section" id="sobre" aria-labelledby="about-title">
-      <div class="portrait-wrap"><img src="assets/marcos-alves.jpg" alt="Marcos Alves, presidente da 21Go!" width="3072" height="4096" loading="lazy"><div class="portrait-caption"><span>QUEM ESTÁ À FRENTE</span><strong>Marcos Alves</strong><p>Presidente da 21Go!</p></div><span class="portrait-accent" aria-hidden="true"></span></div>
-      <div class="about-copy"><p class="eyebrow">CONHEÇA A 21GO!</p><h2 id="about-title">Por trás da proteção,<br><span>existe gente.</span></h2><p>A 21Go! apresenta uma proposta de proteção patrimonial com atenção a quem vive e se movimenta pelo Rio de Janeiro: Grande Rio, Baixada e interior do estado.</p><p>À frente da empresa está <strong>Marcos Alves</strong>, que compartilha em seu perfil uma visão de fé, família e propósito.</p><blockquote>“Deus é o centro.<br>Família é a base.<br>O resultado é consequência.”<cite>Marcos Alves · apresentação no Instagram</cite></blockquote><a class="social-link" href="https://www.instagram.com/marcosalves_pr/" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-instagram"/></svg>Conheça o presidente <span>@marcosalves_pr</span></a></div>
-    </section>
-
     <section class="steps-section section" aria-labelledby="steps-title"><div class="container"><div class="section-heading"><div><p class="eyebrow">COMECE COM UMA CONVERSA</p><h2 id="steps-title">Seu próximo passo<br><span>é simples.</span></h2></div><a class="button button-outline" data-whatsapp href="https://wa.me/5521974950212" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-whatsapp"/></svg>Falar com um consultor</a></div><div class="steps-grid"><article><span class="step-number">01</span><h3>Conte sobre seu veículo</h3><p>Chame no WhatsApp e informe o modelo, o ano e a sua cidade.</p></article><article><span class="step-number">02</span><h3>Conheça sua proposta</h3><p>Entenda os benefícios, os valores e as condições para a sua rotina.</p></article><article><span class="step-number">03</span><h3>Conclua sua adesão</h3><p>Confira o regulamento e siga as orientações do consultor para a contratação e o início da proteção.</p></article></div></div></section>
 
     <section class="section container faq-section" id="duvidas" aria-labelledby="faq-title"><div><p class="eyebrow">INFORMAÇÃO PARA DECIDIR</p><h2 id="faq-title">Ficou com<br><span>alguma dúvida?</span></h2><p>Uma boa escolha começa com uma conversa clara.</p><a class="text-link" data-whatsapp data-topic="dúvidas sobre proteção patrimonial" href="https://wa.me/5521974950212" target="_blank" rel="noopener noreferrer">Tirar minhas dúvidas pelo WhatsApp</a></div><div class="faq-list">
@@ -97,7 +102,7 @@
     <section class="contact-section" id="contato" aria-labelledby="contact-title"><div class="container contact-inner"><p class="eyebrow">O QUE VOCÊ CONQUISTOU IMPORTA.</p><h2 id="contact-title">Vamos cuidar<br>do seu <em>próximo caminho?</em></h2><p>Carro, moto ou moto elétrica.<br>Sua proteção patrimonial começa com uma conversa.</p><a class="button button-dark" data-whatsapp href="https://wa.me/5521974950212" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-whatsapp"/></svg>Solicitar minha proposta</a><a class="contact-phone" data-whatsapp href="https://wa.me/5521974950212" target="_blank" rel="noopener noreferrer">(21) 97495-0212</a></div><span class="contact-watermark" aria-hidden="true">21</span></section>
   </main>
 
-  <footer class="site-footer"><div class="container"><div class="footer-top"><a href="#inicio" class="brand" aria-label="21Go! Proteção patrimonial — início"><span class="brand-name">21Go<span>!</span></span><span class="brand-caption">PROTEÇÃO PATRIMONIAL</span></a><p>Confiança para seguir em frente.<br>Carros, motos e motos elétricas.</p><a href="#inicio" class="text-link">Voltar ao início</a></div><div class="footer-bottom"><span>© <span id="year">2026</span> 21Go! · Proteção patrimonial</span><p>Adesão e benefícios sujeitos à análise, à proposta e ao regulamento aplicável.</p></div></div></footer>
+  <footer class="site-footer"><div class="container"><div class="footer-top"><a href="#inicio" class="brand" aria-label="21Go! Proteção patrimonial — início"><svg class="brand-logo" viewBox="0 105 512 255" role="img" aria-label="Logo oficial 21Go!"><image href="assets/logo-original.jpeg" width="512" height="512" filter="url(#logo-remove-blue)" clip-path="url(#logo-icon-crop)"/><image href="assets/logo-original.jpeg" width="512" height="512" filter="url(#logo-remove-blue)" clip-path="url(#logo-word-crop)"/></svg><span class="brand-caption">PROTEÇÃO PATRIMONIAL</span></a><p>Confiança para seguir em frente.<br>Carros, motos e motos elétricas.</p><a href="#inicio" class="text-link">Voltar ao início</a></div><div class="footer-bottom"><span>© <span id="year">2026</span> 21Go! · Proteção patrimonial</span><p>Adesão e benefícios sujeitos à análise, à proposta e ao regulamento aplicável.</p></div></div></footer>
   <a class="floating-whatsapp" data-whatsapp href="https://wa.me/5521974950212" target="_blank" rel="noopener noreferrer" aria-label="Falar sobre proteção patrimonial no WhatsApp"><svg class="icon"><use href="#i-whatsapp"/></svg><span>Vamos conversar?</span></a>
 </body>
 </html>
